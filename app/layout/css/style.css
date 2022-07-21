@@ -1,0 +1,478 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.welcommsg{
+  position: fixed;
+    top: -80px;
+    left: 50%;
+    background-color: #f9d342;
+    z-index: 9999999999999999999;
+    padding: 25px 48px;
+    color: #363636;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: -150px;
+    text-transform: capitalize;
+    animation: welcome 4s linear 1s 1  ;
+}
+@keyframes welcome {
+  0%{
+    top: 00px;
+  }
+  20%{
+    top: 120px;
+  }
+  40%{
+    top: 350px;
+  }
+  60%{
+    top: 450px;
+  }
+  80%{
+    top: 650px;
+  }
+  100%{
+    top: 800px;
+  }
+}
+/* index style */
+
+.index{
+  width: 600px;
+  margin: 100px auto;
+}
+.index h2{
+  text-transform: capitalize;
+    font-size: 51px;
+    color: #ffe6e6;
+    margin-bottom: 24px;
+    text-shadow: 3px -2px 4px #1e0550;
+}
+/*styling of lang */
+.lang{
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 9999;
+}
+/*styling of dashbaord*/
+ .navbar{
+  background-color: #242526;
+  color: #fff;
+  position: relative;
+  border-bottom:1px solid #ddd;
+}
+ .navbar div a img{
+  max-width: 60px;
+  max-height: 60px;
+}
+ .navbar{
+  max-height: 70px;
+justify-content: space-evenly;
+}
+ .navbar div{
+  width: calc(90% / 3);
+  font-size: 22px;
+    text-transform: capitalize;
+}
+ .navbar div:last-of-type{
+  text-align: right;
+  cursor: pointer;
+  
+    text-transform: capitalize;
+}
+.navbar div ul{
+  position: absolute;
+    background-color: #242526;
+    /* bottom: -236px; */
+    right: 39px;
+    padding: 20px 34px;
+    display: none;
+    z-index: 99999999999999999999999999999999999;
+    top: 70px;
+}
+.navbar div ul li{
+  display: block;
+    margin-bottom: 11px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+ .navbar div ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+/* chatapp design */
+.pad{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.chatapp{
+  margin-top: 0px;
+  background-color: #242526;
+  color: #e4e6eb;
+  max-height: calc(100vh - 70px);
+  height: calc(100vh - 70px);
+overflow: hidden;
+cursor: pointer;
+}
+.chatapp .chats{
+  width: 25%;
+  border-right: 1px solid #ddd;
+  overflow: auto;
+}
+
+.chatapp .messages{
+  width: 50%;
+  border-right: 1px solid #ddd;
+}
+.chatapp .user{
+  width: 25%;
+}
+.chatapp .chats h4{
+  text-align: center;
+  font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.chatapp .form-group:first-of-type{
+  padding: 0 20px;
+}
+.chatapp .searchforchats {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  margin: 25px auto;
+  border-radius: 10px;
+  background-color: #3a3b3c;
+  color: #fff;
+  border: none;
+  padding: 2px 14px;
+}
+.chatapp .singelchat{
+  padding: 10px 20px;
+  position : relative;
+  margin-bottom: 15px;
+}
+.chatapp .singelchat p{
+ position: absolute;
+ top: 10px;
+ right: 20px;
+ background-color: red;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ color: #fff;
+ text-align: center;
+ line-height: 30px;
+}
+.singelchat span.bold{
+  font-weight:  bold;
+}
+.chatapp .singelchat::after{
+  content: " ";
+  clear: both;
+  width: 100%;
+  display: block;
+}
+.chatapp .singelchat div:first-of-type{
+  float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 14px;
+}
+.chatapp .singelchat div img{
+  max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+.chatapp .singelchat div{
+  float: left;
+}
+.chatapp .singelchat div bold{
+  display: block;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.chatapp .singelchat div span{
+  color: #ddd;
+    font-size: 11px;
+}
+.chatapp .singelchat.active {
+background-color: #242f3c;
+}
+
+.chatapp .messages .left{
+  text-align: right;
+  margin-top: 20px;
+  
+}
+.chatapp .messages .right{
+  text-align: left;
+  margin-top: 20px;
+}
+.chatapp .messages .right span{
+  background-color: #0084ff;
+    padding: 6px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.chatapp .messages .left span{
+  background-color: #3e4042;
+  border-radius: 12px;
+  padding: 6px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.chatapp .messages .left i{
+  color: #3e4042;
+  font-size: 25px;
+  margin-bottom: 20px;
+display: inline-block;
+margin-left: 20px;
+}
+.chatapp .messages .right i{
+  color:#0084ff;
+  font-size: 25px;
+  margin-bottom: 20px;
+display: inline-block;
+margin-right: 20px;
+}
+.chatapp .user p{
+  font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    border-bottom: 2px solid #fff;
+    margin-top: 20px;
+}
+.chatapp .messages input{
+  background-color: #3a3b3c;
+  color: #fff;
+  border: none;
+  padding: 2px 14px;
+  width: 100%;
+}
+.chatapp .message-tools{
+  justify-content: space-evenly;
+    margin-top: 36px;
+  
+}
+.chatapp .header{
+  width: 100%;
+    height: 90px;
+}
+.chatapp .header .d-flex{
+  
+}
+.chatapp .message-tools div:first-of-type{
+  width: 88%;
+}
+.chatapp .message-tools i{
+  height: 28px;
+    line-height: 28px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.chatapp .messages .header .d-flex{
+ 
+
+}
+.chatapp .messages .header .d-flex img{
+  width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+.chatapp .messages .header .d-flex bold{
+  margin-top: 14px;
+    letter-spacing: 0px;
+    font-size: 19px;
+}
+.chatapp .messages .d-flex span{
+  margin-left: auto;
+  margin-right: 25px;
+  margin-top: 14px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #00f;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 21px;
+  font-weight: bold;
+}
+.chatapp .messages .d-flex{
+  background-color: #242526;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 2px 0px #7e817c;
+  
+}
+
+/* photos section*/
+.photo h3{
+  text-align: center;
+    margin-top: 57px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-shadow: 0px 2px 2px rgb(0 0 0 / 30%);
+}
+.photo{
+  width: 500px;
+    margin: 30px auto;
+}
+.photo figure{
+  text-align: center;
+    padding: 8px;
+    width: 250px;
+    height: 250px;
+    border: 4px solid #ddd;
+    margin: 20px auto;
+    position: relative;
+}
+.photo figure img{
+  max-width: 100%;
+    max-height: 100%;
+}
+.photo figure i{
+  position: absolute;
+    top: -2px;
+    color: #262020;
+    right: 3px;
+    font-size: 31px;
+    font-weight: bold;
+    background-color: #ebebeb;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.photo form{
+  width: 250px;
+    margin: auto;
+    position: relative;
+}
+.photo form .btn-danger{
+  position: absolute;
+    right: 0px;
+}
+.photo figure a{
+  color: #fff;
+  /* position: absolute; */
+  /* bottom: -67px; */
+  /* left: 50%; */
+  margin-left: -28px;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  left: 47px;
+}
+/*username section */
+.username{
+  width: 600px;
+    margin: 200px auto;
+}
+.username h2{
+  text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.username input[type='text']{
+  margin-bottom: 20px;
+  display: block;
+}
+.username input[type="submit"]:last-of-type{
+  margin-left: auto;
+    display: block;
+    margin-top: -40px;
+}
+.username a{
+  color: #fff;
+  /* position: absolute; */
+  /* bottom: -67px; */
+  /* left: 50%; */
+  margin-left: -28px;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  left: 47px;
+}
+/* chat app messages design */
+.chatapp .messages {
+ flex-wrap: wrap;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.chatapp .messages > div{
+  width: 100%;
+}
+.chatapp .messages .message-tools{
+  height: 90px;
+    align-items: center;
+    margin-top: 0;
+}
+.chatapp .messages .message-body{
+  height: calc(100% - 180px);
+  overflow: auto;
+
+  
+    padding: 10px;
+}
+.chatapp .messages .message-body > div{
+  width: 100%;
+}
+/* edit profile */
+.body{
+  background-color: #242526;
+  height: calc(100vh - 70px);
+  overflow: hidden;
+}
+.error{
+  margin-top: 20px;
+  width: 300px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.photo figure img{
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.fas.fa-check{
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.fas.fa-check.check2{
+  color: rgb(142, 142, 255);
+}
+/*search page*/
+.results{
+  min-height: calc(100vh - 70px);
+  background-color: #333;
+  color: #fff;
+}
+.results button{
+  float: right;
+}
+.results > div{
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+.results img{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
